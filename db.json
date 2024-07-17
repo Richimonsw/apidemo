@@ -51,6 +51,152 @@
         }
       ],
       "facturacion": {
+        "diaDeCicloDeCobro": 15,
+        "diaMaximoPago": 25,
+        "metodoPagoPreferido": "tarjeta_credito",
+        "datosMetodoPago": {
+          "tipo": "VISA",
+          "ultimosDigitos": "4321",
+          "fechaExpiracion": "12/2025"
+        }
+      },
+      "estadoCuenta": {
+        "deuda": {
+          "cantidadMesesAdeudados": 2,
+          "montoTotalAdeudado": 75.50,
+          "detalleMesesAdeudados": [
+            {
+              "mes": "Mayo",
+              "anio": 2024,
+              "monto": 37.25
+            },
+            {
+              "mes": "Junio",
+              "anio": 2024,
+              "monto": 38.25
+            }
+          ]
+        },
+        "ultimaFactura": {
+          "numeroFactura": "F-2024-06001",
+          "fechaEmision": "2024-06-15",
+          "fechaVencimiento": "2024-06-25",
+          "montoTotal": 38.25,
+          "estado": "pendiente",
+          "detalleConsumo": [
+            {
+              "servicio": "Agua",
+              "consumo": 15,
+              "unidad": "m3",
+              "costoUnitario": 1.05,
+              "subtotal": 15.75
+            },
+            {
+              "servicio": "Electricidad",
+              "consumo": 120,
+              "unidad": "kWh",
+              "costoUnitario": 0.1875,
+              "subtotal": 22.50
+            }
+          ],
+          "impuestos": {
+            "iva": 4.59
+          }
+        }
+      },
+      "historialPagos": [
+        {
+          "fechaPago": "2024-04-23",
+          "montoPagado": 36.75,
+          "metodoPago": "tarjeta_credito",
+          "numeroTransaccion": "TRX-123456"
+        },
+        {
+          "fechaPago": "2024-03-24",
+          "montoPagado": 35.50,
+          "metodoPago": "transferencia_bancaria",
+          "numeroTransaccion": "TRX-789012"
+        }
+      ],
+      "notificaciones": {
+        "correoElectronico": true,
+        "sms": false,
+        "recordatorioPago": 3
+      },
+      "preferencias": {
+        "idioma": "español",
+        "formatoFactura": "digital"
+      },
+      "reclamos": [
+        {
+          "id": 1,
+          "tipoReclamo": "Facturación incorrecta",
+          "descripcion": "El monto facturado no coincide con mi consumo",
+          "fechaReclamo": "2024-06-20",
+          "servicioAfectado": "AGU-12345",
+          "estado": "en proceso"
+        }
+      ],
+      "planPago": null
+    },
+    {
+      "id": 2,
+      "datosPersonales": {
+        "nombre": "Ana",
+        "apellido": "Martínez",
+        "cedula": "0987654321",
+        "fechaNacimiento": "1990-08-22",
+        "genero": "femenino",
+        "estadoCivil": "soltera"
+      },
+      "datosContacto": {
+        "telefono": "+593998765432",
+        "email": "ana.martinez@email.com",
+        "direccion": {
+          "calle": "Calle Secundaria",
+          "numero": "789",
+          "ciudad": "Guayaquil",
+          "provincia": "Guayas",
+          "codigoPostal": "090150",
+          "pais": "Ecuador"
+        }
+      },
+      "datosFacturacion": {
+        "razonSocial": "Ana Martínez",
+        "ruc": "0987654321001",
+        "direccionFacturacion": {
+          "calle": "Calle Secundaria",
+          "numero": "789",
+          "ciudad": "Guayaquil",
+          "provincia": "Guayas",
+          "codigoPostal": "090150",
+          "pais": "Ecuador"
+        }
+      },
+      "servicios": [
+        {
+          "tipoServicio": "Agua",
+          "numeroContrato": "AGU-54321",
+          "fechaInicio": "2021-03-01",
+          "estado": "activo",
+          "tarifaBase": 10.50
+        },
+        {
+          "tipoServicio": "Electricidad",
+          "numeroContrato": "ELE-98765",
+          "fechaInicio": "2021-03-01",
+          "estado": "activo",
+          "tarifaBase": 15.75
+        },
+        {
+          "tipoServicio": "Internet",
+          "numeroContrato": "INT-11111",
+          "fechaInicio": "2024-07-01",
+          "estado": "activo",
+          "tarifaBase": 25.00
+        }
+      ],
+      "facturacion": {
         "diaDeCicloDeCobro": 20,
         "diaMaximoPago": 30,
         "metodoPagoPreferido": "debito_automatico",
@@ -116,7 +262,9 @@
       "preferencias": {
         "idioma": "español",
         "formatoFactura": "digital"
-      }
+      },
+      "reclamos": [],
+      "planPago": null
     }
   ],
   "informacionGeneral": {
@@ -165,6 +313,23 @@
       {
         "rango": "201+ kWh",
         "costoUnitario": 0.2500
+      }
+    ],
+    "internet": [
+      {
+        "plan": "Básico",
+        "velocidad": "20 Mbps",
+        "costoMensual": 25.00
+      },
+      {
+        "plan": "Estándar",
+        "velocidad": "50 Mbps",
+        "costoMensual": 35.00
+      },
+      {
+        "plan": "Premium",
+        "velocidad": "100 Mbps",
+        "costoMensual": 50.00
       }
     ]
   },
