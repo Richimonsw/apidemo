@@ -51,77 +51,67 @@
         }
       ],
       "facturacion": {
-        "diaDeCicloDeCobro": 15,
-        "diaMaximoPago": 25,
-        "metodoPagoPreferido": "tarjeta_credito",
+        "diaDeCicloDeCobro": 20,
+        "diaMaximoPago": 30,
+        "metodoPagoPreferido": "debito_automatico",
         "datosMetodoPago": {
-          "tipo": "VISA",
-          "ultimosDigitos": "4321",
-          "fechaExpiracion": "12/2025"
+          "tipo": "Cuenta Bancaria",
+          "banco": "Banco Nacional",
+          "numeroCuenta": "****5678"
         }
       },
       "estadoCuenta": {
         "deuda": {
-          "cantidadMesesAdeudados": 2,
-          "montoTotalAdeudado": 75.50,
-          "detalleMesesAdeudados": [
-            {
-              "mes": "Mayo",
-              "anio": 2024,
-              "monto": 37.25
-            },
-            {
-              "mes": "Junio",
-              "anio": 2024,
-              "monto": 38.25
-            }
-          ]
+          "cantidadMesesAdeudados": 0,
+          "montoTotalAdeudado": 0,
+          "mensaje": "Cliente al día en sus pagos"
         },
         "ultimaFactura": {
-          "numeroFactura": "F-2024-06001",
-          "fechaEmision": "2024-06-15",
-          "fechaVencimiento": "2024-06-25",
-          "montoTotal": 38.25,
-          "estado": "pendiente",
+          "numeroFactura": "F-2024-06002",
+          "fechaEmision": "2024-06-20",
+          "fechaVencimiento": "2024-06-30",
+          "montoTotal": 35.75,
+          "estado": "pagada",
+          "fechaPago": "2024-06-22",
           "detalleConsumo": [
             {
               "servicio": "Agua",
-              "consumo": 15,
+              "consumo": 13,
               "unidad": "m3",
               "costoUnitario": 1.05,
-              "subtotal": 15.75
+              "subtotal": 13.65
             },
             {
               "servicio": "Electricidad",
-              "consumo": 120,
+              "consumo": 110,
               "unidad": "kWh",
               "costoUnitario": 0.1875,
-              "subtotal": 22.50
+              "subtotal": 20.63
             }
           ],
           "impuestos": {
-            "iva": 4.59
+            "iva": 4.29
           }
         }
       },
       "historialPagos": [
         {
-          "fechaPago": "2024-04-23",
-          "montoPagado": 36.75,
-          "metodoPago": "tarjeta_credito",
-          "numeroTransaccion": "TRX-123456"
+          "fechaPago": "2024-06-22",
+          "montoPagado": 35.75,
+          "metodoPago": "debito_automatico",
+          "numeroTransaccion": "TRX-234567"
         },
         {
-          "fechaPago": "2024-03-24",
-          "montoPagado": 35.50,
-          "metodoPago": "transferencia_bancaria",
-          "numeroTransaccion": "TRX-789012"
+          "fechaPago": "2024-05-23",
+          "montoPagado": 34.50,
+          "metodoPago": "debito_automatico",
+          "numeroTransaccion": "TRX-123456"
         }
       ],
       "notificaciones": {
         "correoElectronico": true,
-        "sms": false,
-        "recordatorioPago": 3
+        "sms": true,
+        "recordatorioPago": 5
       },
       "preferencias": {
         "idioma": "español",
