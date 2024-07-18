@@ -31,6 +31,10 @@
           "monto": 38.25
         }
       ]
+    },
+    "proximoPago": {
+      "fechaLimite": "2024-07-15",
+      "monto": 35.25
     }
   },
   {
@@ -39,6 +43,10 @@
     "deuda": {
       "cantidadMesesAdeudados": 0,
       "montoAdeudado": 0
+    },
+    "proximoPago": {
+      "fechaLimite": "2024-07-15",
+      "monto": 35.00
     }
   }
 ],
