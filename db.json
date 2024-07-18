@@ -13,15 +13,35 @@
         "provincia": "Pichincha"
       },
       "servicios": [
+  {
+    "tipo": "Agua",
+    "numeroContrato": "AGU-12345",
+    "deuda": {
+      "cantidadMesesAdeudados": 2,
+      "montoAdeudado": 75.50,
+      "detalleMesesAdeudados": [
         {
-          "tipo": "Agua",
-          "numeroContrato": "AGU-12345"
+          "mes": "Mayo",
+          "anio": 2024,
+          "monto": 37.25
         },
         {
-          "tipo": "Electricidad",
-          "numeroContrato": "ELE-67890"
+          "mes": "Junio",
+          "anio": 2024,
+          "monto": 38.25
         }
-      ],
+      ]
+    }
+  },
+  {
+    "tipo": "Electricidad",
+    "numeroContrato": "ELE-67890",
+    "deuda": {
+      "cantidadMesesAdeudados": 0,
+      "montoAdeudado": 0
+    }
+  }
+],
       "estadoCuenta": {
         "ultimoPago": {
           "fecha": "2024-04-15",
