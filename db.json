@@ -85,47 +85,171 @@
     {
       "id": 2,
       "telefono": "+593985912136",
-      "nombre": "Ana Martínez",
-      "cedula": "0987654321",
-      "email": "ana.martinez@email.com",
+      "nombre": "María López",
+      "cedula": "1712345678",
+      "email": "maria.lopez@email.com",
       "direccion": {
-        "calle": "Calle Secundaria",
-        "numero": "456",
-        "ciudad": "Guayaquil",
-        "provincia": "Guayas"
+        "calle": "Calle del Sol",
+        "numero": "789",
+        "ciudad": "Cuenca",
+        "provincia": "Azuay"
       },
       "servicios": [
         {
           "tipo": "Agua",
-          "numeroContrato": "AGU-54321"
+          "numeroContrato": "AGU-24680",
+          "deuda": {
+            "cantidadMesesAdeudados": 1,
+            "montoAdeudado": 40.50,
+            "detalleMesesAdeudados": [
+              {
+                "mes": "Junio",
+                "anio": 2024,
+                "monto": 40.50
+              }
+            ]
+          },
+          "proximoPago": {
+            "fechaLimite": "2024-07-20",
+            "monto": 38.75
+          }
         },
         {
           "tipo": "Electricidad",
-          "numeroContrato": "ELE-98765"
-        },
-        {
-          "tipo": "Internet",
-          "numeroContrato": "INT-11111"
+          "numeroContrato": "ELE-13579",
+          "deuda": {
+            "cantidadMesesAdeudados": 0,
+            "montoAdeudado": 0
+          },
+          "proximoPago": {
+            "fechaLimite": "2024-07-20",
+            "monto": 42.50
+          }
         }
       ],
       "estadoCuenta": {
         "ultimoPago": {
-          "fecha": "2024-06-20",
-          "monto": 85.50
+          "fecha": "2024-05-18",
+          "monto": 78.25
         },
         "proximoPago": {
           "fechaLimite": "2024-07-20",
-          "monto": 86.75
+          "monto": 81.25
         },
         "deuda": {
-          "cantidadMesesAdeudados": 0,
-          "montoTotalAdeudado": 0,
-          "mensaje": "Cliente al día en sus pagos"
+          "cantidadMesesAdeudados": 1,
+          "montoTotalAdeudado": 40.50,
+          "detalleMesesAdeudados": [
+            {
+              "mes": "Junio",
+              "anio": 2024,
+              "monto": 40.50
+            }
+          ]
         }
       },
-      "metodoPagoPreferido": "debito_automatico",
+      "metodoPagoPreferido": "transferencia_bancaria",
       "notificaciones": {
         "email": true,
+        "sms": true
+      }
+    },
+    {
+      "id": 3,
+      "telefono": "+593998765432",
+      "nombre": "Carlos Rodríguez",
+      "cedula": "0923456789",
+      "email": "carlos.rodriguez@email.com",
+      "direccion": {
+        "calle": "Avenida de las Flores",
+        "numero": "321",
+        "ciudad": "Ambato",
+        "provincia": "Tungurahua"
+      },
+      "servicios": [
+        {
+          "tipo": "Agua",
+          "numeroContrato": "AGU-97531",
+          "deuda": {
+            "cantidadMesesAdeudados": 3,
+            "montoAdeudado": 120.75,
+            "detalleMesesAdeudados": [
+              {
+                "mes": "Abril",
+                "anio": 2024,
+                "monto": 39.25
+              },
+              {
+                "mes": "Mayo",
+                "anio": 2024,
+                "monto": 40.50
+              },
+              {
+                "mes": "Junio",
+                "anio": 2024,
+                "monto": 41.00
+              }
+            ]
+          },
+          "proximoPago": {
+            "fechaLimite": "2024-07-25",
+            "monto": 39.75
+          }
+        },
+        {
+          "tipo": "Electricidad",
+          "numeroContrato": "ELE-86420",
+          "deuda": {
+            "cantidadMesesAdeudados": 1,
+            "montoAdeudado": 45.25,
+            "detalleMesesAdeudados": [
+              {
+                "mes": "Junio",
+                "anio": 2024,
+                "monto": 45.25
+              }
+            ]
+          },
+          "proximoPago": {
+            "fechaLimite": "2024-07-25",
+            "monto": 43.50
+          }
+        }
+      ],
+      "estadoCuenta": {
+        "ultimoPago": {
+          "fecha": "2024-03-20",
+          "monto": 82.75
+        },
+        "proximoPago": {
+          "fechaLimite": "2024-07-25",
+          "monto": 83.25
+        },
+        "deuda": {
+          "cantidadMesesAdeudados": 3,
+          "montoTotalAdeudado": 166.00,
+          "detalleMesesAdeudados": [
+            {
+              "mes": "Abril",
+              "anio": 2024,
+              "monto": 39.25
+            },
+            {
+              "mes": "Mayo",
+              "anio": 2024,
+              "monto": 40.50
+            },
+            {
+              "mes": "Junio",
+              "anio": 2024,
+              "monto": 86.25
+            }
+          ]
+        }
+      },
+      "metodoPagoPreferido": "efectivo",
+      "notificaciones": {
+        "email": false,
         "sms": true
       }
     }
